@@ -1,0 +1,31 @@
+<nav class="navbar fixed-top navbar-dark navbar-expand-lg navbar-template" [ngClass]= "{'active': isScrolled}">
+  <a class="navbar-brand" href="#">Niranjan</a>
+  <div class="d-flex flex-row order-2 order-lg-3">
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link px-2" href="https://www.linkedin.com/in/niranjan-maharana-999583114"><span class="fa fa-linkedin"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-2" href="https://plus.google.com/+NiranjanMaharana"><span class="fa fa-google-plus"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-2" href="https://twitter.com/NiranjanMahara"><span class="fa fa-twitter"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-2" href="https://www.facebook.com/niranjan.maharana.75"><span class="fa fa-facebook"></span></a>
+      </li>
+    </ul>
+    <button class="navbar-toggler d-lg-none" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+      aria-controls="navbarsExampleDefault" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse order-3 order-lg-2" [ngbCollapse]="isCollapsed">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" routerLink="/home">home</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/aboutme">about me</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/services">services</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/contactme">contact me</a></li>
+    </ul>
+  </div>
+</nav>

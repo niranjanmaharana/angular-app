@@ -1,0 +1,17 @@
+nav {
+  transition: background-color 2s ease-out;
+  z-index: 9999;
+  //box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  //background: rgba(255, 255, 255, 0.95);
+  top: 0;
+  animation-name: fadeInDown;
+}
+.navbar-brand {
+  font-family: "Allura";
+}
+
+nav.active {
+  background: #5c6d7f;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
